@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body onload="change()">
+
+    <div class="container">
+        <h1>Generador de Colores</h1>
+        <div id="color">
+        </div>
+        <div>
+            <div>
+                R:<input id="r" onchange="change()" min="0" max="255" type="range">
+            </div>
+            G:<input id="g" onchange="change()" min="0" max="255" type="range">
+            B:<input id="b" type="range" onchange="change()" min="0" max="255">
+            <div id="result"></div>
+        </div>
+        <button onclick="copy()">Copiar</button>
+        
+    </div>
+    <script src="/app.js"></script>
+</body>
+
+</html>
